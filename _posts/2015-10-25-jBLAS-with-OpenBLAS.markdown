@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "jBLAS with OpenBLAS"
-excerpt: "If you don't have GPU in your fingertips? This is the situation that I face at work. So, will you satisfied with training your model on one CPU for couple of weeks? No, right? Here is one alternative for Java users. I will explain how to create a JBLAS jar wrapped with OpenBLAS in Linux."
+excerpt: "What if you don't have GPU at your fingertips? This is the situation that I face at work. So, will you be satisfied to train your model on one CPU for couple of weeks? No, right? Here is one alternative for Java users. I will explain how to create a JBLAS jar wrapped with OpenBLAS on Linux."
 date:   2015-10-25 09:40
 ---
 
@@ -11,7 +11,7 @@ date:   2015-10-25 09:40
 [BLAS](http://www.netlib.org/blas/) is a widely used linear algebra library which provides
 fast matrix/vector operations such as multiplication. [OpenBLAS](https://github.com/xianyi/OpenBLAS/wiki) is a optimized and parallel version of BLAS. Finally, jBLAS is a Java wrapper of above libraries as well as [LAPACK](http://www.netlib.org/lapack/) and [ATLAS](http://math-atlas.sourceforge.net/). Couple of days ago, I would like to create a jBLAS jar file built with OpenBLAS.
 
-Here is the story. I'm working on Deep Learning. This area is now in the control of GPUs since the you basically vectorize (express the instruction with vector/matrix operations) the ,vy parts of the algorithm. Who's the master for processing vector operations? Yeah, GPUs. [Here](http://www.denizyuret.com/2015/01/parallel-processing-for-natural-language.html) is one analysis of using GPU instead of using single/multi core CPU in Natural Language Processing. You can even see **100x** speed-up from single CPU in _particular settings_. As expected, this speed-up is very useful especially if you're working on large datasets. All this sounds exciting but what if you don't have GPU in your fingertips? Will you satisfied with training your model on one CPU for several weeks? No, right? Here is one alternative for Java users to bring down weeks to days depending how many cores your machine have. I will explain how to create a JBLAS jar wrapped with OpenBLAS in Linux.
+Here is the story. I'm working on Deep Learning. This area is now in the control of GPUs since the you basically vectorize (express the instruction with vector/matrix operations) the ,vy parts of the algorithm. Who's the master for processing vector operations? Yeah, GPUs. [Here](http://www.denizyuret.com/2015/01/parallel-processing-for-natural-language.html) is one analysis of using GPU instead of using single/multi core CPU in Natural Language Processing. You can even see **100x** speed-up from single CPU in _particular settings_. As expected, this speed-up is very useful especially if you're working on large datasets. All this sounds exciting but what if you don't have GPU at your fingertips? Will you be satisfied to train your model on one CPU for several weeks? No, right? Here is one alternative for Java users to bring down weeks to days depending how many cores your machine have. I will explain how to create a JBLAS jar wrapped with OpenBLAS on Linux.
 
 ```bash
 sudo apt-get install libopenblas-dev # Ubuntu/Debian specific. But you can download & install from the website.
