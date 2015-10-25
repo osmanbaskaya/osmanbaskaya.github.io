@@ -21,9 +21,8 @@ make
 ant dynamic-lean-jar
 ```
 
-OpenBLAS and LAPACK libraries are installed in `/usr/lib` on my machine. If you install it somewhere else please change the `/usr/lib` with an appropriate path. Instead of using `ant` in the last step, I tried `make all-jars` but it gives me error such as `lean-jar does not exist in the java-blas project`. Since the libraries are most likely not used by other processes, instead of building dynamic jar, I tried static jar by running the command `ant static-lean-jar`. Although I managed to create a jar, I tested and it doesn't work paralel. 
+OpenBLAS and LAPACK libraries are installed in `/usr/lib` on my machine. If you install it somewhere else please change the `/usr/lib` with an appropriate path. Instead of using `ant` in the last step, I tried `make all-jars` but it gives me error such as `lean-jar does not exist in the java-blas project`. Since the libraries are most likely not used by other processes, instead of building dynamic jar, I tried static jar by running the command `ant static-lean-jar`. Although I managed to create a jar, I tested and it doesn't work parallel. 
 
 [The simple java code and the Makefile](https://github.com/osmanbaskaya/osmanbaskaya.github.io/tree/master/code/2015-10-25-jBLAS-with-OpenBLAS-code). In order to run the code you just need to create a directory named jars and run `make test`. 
-
 
 I am trying to figure it out if there is a way to create static version of the jar. When I have the answer, you will have, too :).
