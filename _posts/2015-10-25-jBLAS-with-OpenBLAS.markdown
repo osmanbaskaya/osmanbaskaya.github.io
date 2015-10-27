@@ -14,15 +14,22 @@ fast matrix/vector operations such as multiplication. [OpenBLAS](https://github.
 Here is the story. I'm working on Deep Learning. This area is now dominated by GPUs since you can basically vectorize (express the instruction with vector/matrix operations) the heaviest parts of the algorithms. Who's the master for processing vector operations? Yeah, GPUs. [Here](http://www.denizyuret.com/2015/01/parallel-processing-for-natural-language.html) is one analysis of using GPU instead of using single/multi core CPU in Natural Language Processing. You can even see **100x** speed-up from single CPU in _particular settings_. As expected, this speed-up is very useful especially if you're working on large datasets. All this sounds exciting but what if you don't have any GPU at your fingertips? This is the situation that I face at work. So, will you be satisfied to train your model on one CPU and wait (or [fighting with swords](http://imgs.xkcd.com/comics/compiling.png)) for couple of weeks? No, right? Here is one alternative for Java users to bring down weeks to days depending on how many cores your machine have. Therefore, I will explain how to create a JBLAS jar wrapped with OpenBLAS on Linux.
 
 ```bash
-sudo apt-get install libopenblas-dev # Ubuntu/Debian specific. But you can download & install from the website.
+sudo apt-get -y install git-core build-essential gfortran
+git clone git@github.com:xianyi/OpenBLAS.git
+cd OpenBLAS
+make DYNAMIC_ARCH=1 NO_AFFINITY=1 NUM_THREADS=32 # default NUM_THREADS=12
+make install PREFIX=/opt/OpenBLAS
+sudo ldcache
+cd ../
 git clone  git@github.com:mikiobraun/jblas.git
-./configure --libpath=/usr/lib --libs=openblas,lapack --download-lapack --build-type=openblas`
+cd jblas
+./configure --static-libs --libpath=/opt/OpenBLAS/lib --libs=openblas --download-lapack --build-type=openblas
 make
-ant dynamic-lean-jar
+ant static-lean-jar
 ```
 
-OpenBLAS and LAPACK libraries are installed in `/usr/lib` on my machine. If you install it somewhere else please change the `/usr/lib` with an appropriate path. Instead of using `ant` in the last step, I tried `make all-jars` but it gives me error such as `lean-jar does not exist in the java-blas project`. Since the libraries are most likely not used by other processes, instead of building dynamic jar, I tried static jar by running the command `ant static-lean-jar`. Although I managed to create a jar, I tested and it doesn't work parallel. 
+If you want to install OpenBLAS elsewhere please change all the `/opt/OpenBLAS/lib` with an appropriate path. Instead of using `ant` in the last step, I tried `make all-jars` but it gives me error such as _lean-jar does not exist in the java-blas project_. Since the libraries are most likely not used by other processes, instead of building dynamic jar, I decided to go with static jar by running the command `ant static-lean-jar`.
 
-[The simple java code and the Makefile](https://github.com/osmanbaskaya/osmanbaskaya.github.io/tree/master/code/2015-10-25-jBLAS-with-OpenBLAS-code). In order to run the code you just need to create a directory named jars and run `make test`. 
+[The simple java code and the Makefile](https://github.com/osmanbaskaya/osmanbaskaya.github.io/tree/master/code/2015-10-25-jBLAS-with-OpenBLAS-code). In order to run the code you just need to create a directory named jars, copy the jar you have just created in `jblas` directory into jars and run `make test` in the same directory with Makefile.
 
-I am trying to figure it out if there is a way to create static version of the jar. When I have the answer, you will have, too :).
+Let me know if you get any error.
