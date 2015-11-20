@@ -27,4 +27,7 @@ excerpt: "Useful notes, papers, books, videos and tutorials on Deep Learning"
 
 - [DTU Deep Learning Summer School](http://dtu-deeplearning.github.io/)
 - [Deeplearning.net](http://deeplearning.net/tutorial/)
+- [Deep Learning Book by Michael Nielsen][http://neuralnetworksanddeeplearning.com/chap1.html]
 
+
+Update: 2015/11/20
