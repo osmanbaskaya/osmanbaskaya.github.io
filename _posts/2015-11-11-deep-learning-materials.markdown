@@ -27,7 +27,8 @@ excerpt: "Useful notes, papers, books, videos and tutorials on Deep Learning"
 
 - [DTU Deep Learning Summer School](http://dtu-deeplearning.github.io/)
 - [Deeplearning.net](http://deeplearning.net/tutorial/)
-- [Deep Learning Book by Michael Nielsen][http://neuralnetworksanddeeplearning.com/chap1.html]
+- [Deep Learning Book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/chap1.html)
+- [Stanford CS231n](http://cs231n.stanford.edu/), an amazing source for Convolutional Neural Nets.
 
 
-Update: 2015/11/20
+Update: 2015/11/26
