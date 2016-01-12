@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "Media Workers and Resigning/Firing Graph"
-excerpt: In this work, we created a graph using Graph Commons in order to visualize job status of media workers. Current state of free speech for media in Turkey is quite problematic. A lot of media workers are pushing to quit from their job or fired because of their recent works.
+title:  "Journalists Resigning/Firing Graph"
+excerpt: In this work, we created a graph using Graph Commons in order to visualize job status of journalists. Current state of free speech for media in Turkey is quite problematic. A lot of media workers are pushing to quit from their job or fired because of their recent works.
 ---
 
 ## Media as a Puppet
@@ -19,11 +19,11 @@ Graph Common provides you a platform that you can easily build and visualize you
 
 <iframe src="https://graphcommons.com/graphs/eeca1241-1a2c-4c6e-88a3-b52999645284/embed?auto=false" frameborder="0" style="overflow:hidden;width:840px;min-width:600px;border:1px solid #DDDDDD;;height:560px;min-height:400px;" width="840" height="560" allowfullscreen></iframe>
 
-Although there were other interesting topics, we (Kerem, Mohan and I) focussed on media workers. Media is under pressure perhaps as never before. Couple of years ago, phone tapes were leaked to the public. The topics in the tapes were diverse. Some of them are related with media. In those phone tapes there were very important political actors and media owners discussing about what would have been cencored and what should have been done against media workers who published "disturbing" news. As you imagened, those media workers were pushed to be resigned, or fired with some pretext. In this work, we tried to illustrate media workers, their previous job and their current/next job (if any). This makes us to understand what are the camps in media.
+Although there were other interesting topics, we (Kerem, Mohan and I) focussed on journalism. Media is under pressure perhaps as never before. Couple of years ago, phone tapes were leaked to the public. The topics in the tapes were diverse. Some of them are related with media. In those phone tapes there were very important political actors and media owners discussing about what would have been cencored and what should have been done against journalists who published "disturbing" news. The main reason decent journalists are in danger is illustrated in [this graph](http://mulksuzlestirme.org/turkey-media-ownership-network/). Media owners are not only media owners; they are also running in construction and energy sector (Sidenote: I am particularly curious to verify if there is a correlation between media corruption and active construction and energy sectors.) As you imagened, those media workers were pushed to be resigned, or fired with some pretext. In this work, we tried to illustrate media workers, their previous job and their current/next job (if any). This makes us to understand what are the camps in media.
 
 ## What is next?
 
-This graph is starting point for deeper analysis. Next step would be adding the last subject that each media workers worked on. In order to do this, it might be necessary to get help from professional journalists since the graph contains not only reporters but also higher rank professionals such as editors-in-chief. Thus, it would be hard to find out what is the "real" reason behind the scene of firing/quitting.
+This graph is starting point for deeper analysis. Next step would be adding the last subject that each journalists worked on. In order to do this, it might be necessary to get help from professional journalists since the graph contains not only reporters but also higher rank professionals such as editors-in-chief. Thus, it would be hard to find out what is the "real" reason behind the scene of firing/quitting.
 
 
 ## How to contribute?
