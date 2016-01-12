@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Media Workers and Resigning/Firing Graph"
-excerpt: In this work, we created a graph using [Graph Commons](https://graphcommons.com/) in order to visualize job status of media workers. Current state of free speech for media in Turkey is quite problematic. A lot of media workers are pushing to quit from their job or fired because of their recent works.
+excerpt: In this work, we created a graph using Graph Commons in order to visualize job status of media workers. Current state of free speech for media in Turkey is quite problematic. A lot of media workers are pushing to quit from their job or fired because of their recent works.
 ---
 
 ## Media as a Puppet
