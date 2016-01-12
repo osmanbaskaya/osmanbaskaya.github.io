@@ -9,11 +9,11 @@ excerpt: In this work, we created a graph using [Graph Commons](https://graphcom
 
 > If I'd written all the truth I knew for the past ten years, about 600 people - including me - would be rotting in prison cells from Rio to Seattle today. Absolute truth is a very rare and dangerous commodity in the context of professional journalism. ― Hunter S. Thompson
 
-Unfortunately, writing what is really happening for media workers is always a brave job. In Turkey, it's getting harder and harder in everyday. Couple of weeks ago, [Graph Commons](http://graphcommons.com) organized an hackathon ([Structured Journalism and Network Mapping Hackathon](http://graphcommons.github.io/hackathons/2015/08/21/istanbul-yapisal-gazetecilik-en/)) related with current problems in Turkey. Topics were totally interesting, and I attended the hackathon with my brother who is a graduate student in Economy. It was a lot of fun; I met with a lot of people with different backgrounds: activists, journalists, directors, and so on. These kind of events are especially valuable for me because, as a Computer Engineer, it is not always easy for me to come across people who have diverse backgrounds. 
+Unfortunately, writing what is really happening for media workers is always a brave job. In Turkey, it's getting harder and harder in everyday. Couple of months ago, [Graph Commons](http://graphcommons.com) organized an hackathon ([Structured Journalism and Network Mapping Hackathon](http://graphcommons.github.io/hackathons/2015/08/21/istanbul-yapisal-gazetecilik-en/)) related with current problems in Turkey. Topics were totally interesting, and I attended the hackathon with my brother who is a graduate student in Economy. It was a lot of fun; I met with a lot of people with different backgrounds: activists, journalists, directors, and so on. These kind of events are especially valuable for me because, as a Computer Engineer, it is not always easy for me to come across people who have diverse backgrounds. 
 
 ## What is Graph Commons?
 
-Graph Common provides you a platform that you can easily build and visualize your graph with plenty of features such as filtering, graph coloring, path finding and so on. People in Graph Commons try to help you reveal and penetrate the data more easily by graph representation. 
+Graph Common provides you a platform that you can easily build and visualize your graph with plenty of features such as filtering, graph coloring, path finding and so on. People in Graph Commons try to help you to reveal the hidden patterns and penetrate the data more easily by graph representation.
 
 ## First Iteration
 
@@ -30,7 +30,7 @@ This graph is starting point for deeper analysis. Next step would be adding the 
 
 There are various ways to contribute this project.
 
-1. All the data is open. You can reach it [here](https://goo.gl/sxcdqL). There might be error in records, update needs to be done, or you may want to add another media worker. You can leave comment for these issues.
-2. If you think that project is interesing, we would love you to join the team. I can give you necessary information about API key, and give edit priviledge. 
-3. You can share your ideas to improve the graph. We have [slack group](https://graphcommons.slack.com/messages/media-workers/). But first you have to sign-up. Here is the [link](http://graphcommons-slack.herokuapp.com/)
+1. All the data is open. You can reach it via [this link](https://goo.gl/sxcdqL). There might be error in records, update needs to be done, or you may want to add another media worker. You can leave comment for these issues.
+2. If you think that project is interesing, we will be happy if you join our work. I can give you necessary information such as API key, andedit priviledge for the data sheet.
+3. You can share your ideas to improve the graph. We have [slack group](https://graphcommons.slack.com/messages/media-workers/). But first you have to sign-up. Here is the [link](http://graphcommons-slack.herokuapp.com/).
 4. We have a [github repo](https://github.com/osmanbaskaya/journalist-firing-in-turkey). After discussing what you want to add or analysis, you can send me pull request.
