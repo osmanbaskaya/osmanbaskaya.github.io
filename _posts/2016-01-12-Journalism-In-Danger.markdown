@@ -13,7 +13,7 @@ Unfortunately, writing what is really happening is always a brave job. In Turkey
 
 ## What is Graph Commons?
 
-Graph Common provides you a platform that you can easily build and visualize your graph with plenty of features such as filtering, graph coloring, path finding and so on. People in Graph Commons try to help you to reveal the hidden patterns and penetrate the data more easily by graph representation.
+Graph Common provides you a platform that you can easily build and visualize your graph with plenty of features such as filtering, graph coloring, path finding and so on. People in Graph Commons try to help you to reveal the hidden patterns and penetrate the data more easily by graph representation and valuable features they implemented.
 
 ## First Iteration
 
