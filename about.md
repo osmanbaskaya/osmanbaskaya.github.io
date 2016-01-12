@@ -6,7 +6,7 @@ permalink: /about/
 
 I am **Osman Başkaya**, working at Huawei R&D Department as a Research Engineer. 
 
-My main research interests as follows:
+My main research interests are as follows:
 
 - Machine Learning 
 - Deep Learning
