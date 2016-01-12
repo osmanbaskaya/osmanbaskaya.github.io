@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Graph: Fired Media Workers"
+title:  "Media Workers and Quit/Fire Graph"
 excerpt: In this work, we created a graph using [Graph Commons](https://graphcommons.com/) in order to visualize job status of media workers. Current state of free speech for media in Turkey is quite problematic. A lot of media workers are pushing to quit from their job or fired because of their recent works.
 ---
 
@@ -32,5 +32,5 @@ There are various ways to contribute this project.
 
 1. All the data is open. You can reach it here: https://goo.gl/sxcdqL. There might be error in records, update needs to be done, or you may want to add another media worker. You can leave comment for these issues.
 2. If you think that project is interesing, we would love you to join the team. I can give you necessary information about API key, and give edit priviledge. 
-3. You can share your ideas to improve the graph. We have slack group: https://graphcommons.slack.com/messages/journalist-firing/. But first you have to sign-up. Here is the link: http://graphcommons-slack.herokuapp.com/
+3. You can share your ideas to improve the graph. We have [slack group](https://graphcommons.slack.com/messages/media-workers/). But first you have to sign-up. Here is the [link](http://graphcommons-slack.herokuapp.com/)
 4. We have a [github repo](https://github.com/osmanbaskaya/journalist-firing-in-turkey). After discussing what you want to add or analysis, you can send me pull request.
