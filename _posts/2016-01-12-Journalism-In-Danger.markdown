@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Extinction of a Species called Decent Journalist"
+title:  "The Extinction of a Species called Decent Journalist"
 excerpt: In this work, we created a graph using Graph Commons in order to visualize job status of journalists. Current state of free speech for media in Turkey is quite problematic. A lot of media workers are pushing to quit from their job or fired because of their recent works.
 ---
 
