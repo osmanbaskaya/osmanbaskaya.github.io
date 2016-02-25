@@ -5,6 +5,8 @@ title:  "Install TensorFlow on Anaconda"
 excerpt: setuptools package gives headache when installing TensorFlow on Anaconda environment. Sometimes you get "Cannot remove entries from nonexistent file". The solution might be simple.
 ---
 
+*setuptools* package gives headache when installing TensorFlow on Anaconda environment. Sometimes you get "Cannot remove entries from nonexistent file". The solution might be simple.
+
 When you run this:
 
 ```
