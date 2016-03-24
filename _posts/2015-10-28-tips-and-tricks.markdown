@@ -9,6 +9,16 @@ tags:
 
 I am using GNU/Linux (hereafter, I will refer this by saying Linux. Sorry Mr. Stallman) for more than 5 years. In those years I tried to improve my skills as much as possible without devoting any special effort. In this reason, sometimes I came across straightforward but really useful stuff that I missed in years. So, from now on I will note and share those.
 
+#### Inherit the group id when creating new directories and files. 
+
+Solution: [setgid bit](https://en.wikipedia.org/wiki/Setuid#setgid_on_directories)
+
+```bash
+sudo find genie-docker -type d -exec chmod g+s '{}' \;   
+```
+
+More can be found [here](http://unix.stackexchange.com/questions/115631/getting-new-files-to-inherit-group-permissions-on-linux).
+
 #### Use the same user after setting an environment variable.
 If you set an environment variable, you should run a command with that user in the same session (assuming you don't export the environment variable in `.zshrc` or `.bashrc`). This totally makes sense, right? Although it's trivial, you should be careful especially with `sudo` command. Couple of days ago, I set some environment variables related with proxy configurations. Then, I tried to install some packages using aptitute. However, it didn't work. I lost considerable amount of time looking for the problem elsewhere. So, you may want to consider this.
 
