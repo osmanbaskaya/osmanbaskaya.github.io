@@ -9,17 +9,24 @@ excerpt: I summarize the Deep Learning and NLP papers I read recently.
 
 ### Content
 
+1. [Connecting Language and Knowledge Bases with Embedding Models for Relation Extraction](#connectinglanguage)
 1. [A Convolutional Neural Network for Modelling Sentences](#sentmodel)
 1. [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](#towards)
 
 ----
 
-### <a name="sentmodel"></a> 1. A Convolutional Neural Network for Modelling Sentences
+### <a name="connectinglanguage"></a> 1.Connecting Language and Knowledge Bases with Embedding Models for Relation Extraction (2013)
+[This paper](http://www.aclweb.org/anthology/D13-1136.pdf) focuses on Relation Extraction (RE) problem. The method uses not only weakly labeled (Entities are found beforehand with NER methods) sentences but also considers Knowledge Base information. Most methods do not combine latter information, however, it is important to note that there is no joint learning in this paper. They have two separate embedding based methodology for RE problem. One represents the sentence (they called it _mentions_) and relations. The other represents the entities and relations in Freebase. Although relation types are Freebase relations, two model represent the relations separately (using different datasets). By posing the problem as a ranking problem, the first model aims to give high scores the dot product of _mentions_ and corresponding _relation_ in the training set (which is the dataset labeled ), the other tries to minimize $$ |h - r + t|\_{2} $$ where _h_, _r_ and _t_ are embeddings of head entity, relation and tail entity of the triplet, respectively. The model predict relations in test set as follows. First it fetch all the head-tail pairs in the test set, and find the highest scored relation for each head-tail pair. 
+
+- Not clear what mentions is
+- recall is low
+
+### <a name="sentmodel"></a> 1. A Convolutional Neural Network for Modelling Sentences (2014)
 
 [This paper](http://www.aclweb.org/anthology/P14-1062) extends the work described in [Natural Language Processing (almost) from Scratch](http://arxiv.org/pdf/1103.0398v1.pdf). Their method has two components which are the generalization of Max Pooling layer: Dynamic k-Max Pooling. _k_ in the k-Max pooling means that the layer pools _k_ most active features and _dynamic_ in "Dynamic k-Max Pooling" stands for k is not fixed; it is computed by a function of depth of the network and the sentence length. Another improvement is that they have "Multiple Feature Maps" which means that 3 layers (Convolution, Dynamic k-Max Pooling and Non-linear Feature Function) can be computed in parallel with different filters in Convolution layer and then putting all the scores together simply by summing. They also provided some intuition about their feature filters (ie., feature detector to be active for a specific pattern(s)). They fed 7-grams in validation and the test sets for each of 288 feature detectors, and ranked them. They showed feature detectors that are active for "positive", "negative", "too", "not" phrases. In other words, one feature detector active when the 7-grams was "either too serious or too lighthearted." for instance. They illustrated their system's performance by using 4 different datasets.
 
 
-### <a name="towards"></a> 2. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks
+### <a name="towards"></a> 2. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks (2015)
 
 [This paper](http://arxiv.org/pdf/1502.05698.pdf) aims to provide a systematic and controlled experiment suite for Q/A systems. They grouped the question answering problem into 20 subproblems such as "Single Supporting Fact", "Counting", "Basic Deduction", "Path Finding", "Yes/No Question" and so on. This is really useful because you might have better understanding about the weaknesses of a given Q/A system. I said "controlled" since the paper provides a method ([code](https://github.com/facebook/bAbI-tasks)) for dataset generation. Right now, you can only generate short sentences and diversity of the sentences are somewhat limited but they think that this dataset and the generation process are helpful especially when developing and analyzing algorithms. Another contribution is that they extend the work in Weston et al. (2014) ([Memory Networks](http://arxiv.org/pdf/1410.3916v11.pdf)) in 3 ways. They use (1) "Adaptive Memories" thus they can do well in "Three Supporting Facts" subproblem. Original algorithm (Memory Network, MemNN) performs two hops of inference and it doesn't do well on tasks where algorithm needs to perform more than two hops of inference such as "Three Supporting Facts" or "Path Finding". Second extension is (2) N-Grams. This extension addresses the limitations of bag of words problem in the nature of some subtasks such as "Two Argument Relations". If a system use only bag-of-words approach, it cannot distinguish which one is in the north of which: `the office is north of the bedroom`. This is equivalent of `the bedroom is north of the office` in bag-of-word methodology, however, the semantic is completely different. The last extension is that (3) Nonlinearity in matching function. I think paper is worth a read.
 
