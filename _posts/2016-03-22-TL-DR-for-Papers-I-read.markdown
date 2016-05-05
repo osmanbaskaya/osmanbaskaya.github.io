@@ -106,4 +106,4 @@ Match percentages:
 * Interesting result 2: Machine understands other machine (**#6**). The sentiment analyzer outperforms human sentiment annotators when the text in question is _translated_ automatically (i.e., with a SMT system).
 * Surprising result 3: If the text in question is translated automatically, annotations of sentiment analyzer (a.k.a Ex Machina) and human judges overlaps relatively well (**#9**). This made authors to try translating all knowledge resources in resource-rich language (English) to resource poor language (Arabic) and observed the performance increase in sentiment analyzer tool fed by these translated resources.
 
-Moreover, they also dug into sentiment analyzer and human discrepancy.
+Moreover, they also dug into discrepancy between the sentiment analyzer and human judges.
