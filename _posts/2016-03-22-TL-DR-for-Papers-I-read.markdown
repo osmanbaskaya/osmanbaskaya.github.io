@@ -69,10 +69,10 @@ Representing these triplets can be useful for many applications, for instance Wo
 
 Let me introduce you some notations:
 
-- $$ L_m^t $$: Manual translation of language $$L$$ to focus language
-- $$ L_a^t $$: Automatic translation of language $$L$$ to focus language
-- $$ (L_m^t)_m^s $$: Manual sentiment annotation of manual translation of $$L$$
-- $$ (L_m^t)_a^s $$: Automatic sentiment annotation of manual translation of language $$L$$
+- $$ L_m^t $$: Manual translation of a text in language $$L$$ to focus language
+- $$ L_a^t $$: Automatic translation of a text in language $$L$$ to focus language
+- $$ (L_m^t)_m^s $$: Manual sentiment annotation of manual translation text in language $$L$$.
+- $$ (L_m^t)_a^s $$: Automatic sentiment annotation of manual translation text in language $$L$$
 
 #### Experiment A. 
 `Translate Arabic text into English (manually and automatically) and annotate
