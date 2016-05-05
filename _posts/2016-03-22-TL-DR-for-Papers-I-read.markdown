@@ -58,11 +58,11 @@ Representing these triplets can be useful for many applications, for instance Wo
 **Warning**: This paper will not meet TL;DR criteria at all.
 
 
-[This paper](http://www.saifmohammad.com/WebDocs/arabicSA-JAIR.pdf) focuses on analyzing state-of-the-art sentiment analyzer's performance on translated texts. What they have? 
+[This paper](http://www.saifmohammad.com/WebDocs/arabicSA-JAIR.pdf) focuses on analyzing state-of-the-art sentiment analyzer's performance on translated texts. What do they have? 
 
 
-- Manually annotated parallel corpora for a resource-rich language (English) and a resource-poor language (Arabic).
-- Manual sentiment annotation for these corpora.
+- Manually annotated parallel corpora for a resource-rich language (English) and a resource-poor language (Arabic) pair.
+- Manual (Crowd-sourcing) sentiment annotation for these corpora.
 - A state-of-the-art English sentiment analyzer tool.
 - Arabic version of above tool (they implemented Arabic version with the same method)
 - Statistical Machine Translation (SMT) system that translates in both direction ($$English \Longleftrightarrow Arabic$$)
@@ -92,7 +92,7 @@ is the impact of translation.`
 Match percentages:
 ==================
 
-1. Human agreement benchmark for sentiment analysis: 73.82% (think of the upperbound)
+1. Human agreement benchmark for sentiment analysis: 73.82% (you can think of it as an upperbound)
 2. $$ A_m^s $$ vs $$ A_a^s $$: 65.31%
 3. $$ A_m^s $$ vs $$ (E_m^t)_m^s $$: 71.31%
 4. $$ A_m^s $$ vs $$ (E_m^t)_a^s $$: 67.73%
