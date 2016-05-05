@@ -15,8 +15,10 @@ excerpt: I summarize the Deep Learning and NLP papers I read recently.
 1. [Connecting Language and Knowledge Bases with Embedding Models for Relation Extraction](#connectinglanguage)
 1. [A Convolutional Neural Network for Modelling Sentences](#sentmodel)
 1. [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](#towards)
+1. [How Translation Alters Sentiment](#trans-sent-alter)
 
 ----
+
 
 ### <a name="joint-emb-ned"></a> 1. Joint Learning of the Embedding of Words and Entities for Named Entity Disambiguation (2016)
 [This paper](http://arxiv.org/pdf/1601.01343v3.pdf) aims to provide an embedding method which _jointly_ maps words and entities into low-dimensional space. Their focus is Named Entity Disambiguation (NED). Basically they extend the Skip-Gram Model by integrating two more loss functions; 3 loss functions in total. First model (or perhaps sub-model) comes from Skip-Gram Model and tries to optimize word context probability. The second one (Knowledge-base (KB) Graph model) aims to place entities (e.g., Wikipedia Articles) closely if they have similar incoming link patterns. The last one (Anchor Context Model) binds words and entities (otherwise, entity embeddings and word embeddings end up with different places in $$ \Bbb R^d $$) which tries to predict context words in an entity (Wikipedia anchor text). For the sake of computational feasibility, they used _Negative Sampling_ and avoid to calculate the normalization factor in softmax function for each training instance. They trained the model with 40-core CPU in 5 days iterating 10 epoch over December 2014 Wikipedia dump. They improved the state-of-the-art scores on both CoNLL and TAC2010 datasets (more info for [datasets](http://osmanbaskaya.github.io/2016/05/03/Datasets-for-NLP)).
@@ -50,3 +52,58 @@ Representing these triplets can be useful for many applications, for instance Wo
 
 [This paper](http://arxiv.org/pdf/1502.05698.pdf) aims to provide a systematic and controlled experiment suite for Q/A systems. They grouped the question answering problem into 20 subproblems such as "Single Supporting Fact", "Counting", "Basic Deduction", "Path Finding", "Yes/No Question" and so on. This is really useful because you might have better understanding about the weaknesses of a given Q/A system. I said "controlled" since the paper provides a method ([code](https://github.com/facebook/bAbI-tasks)) for dataset generation. Right now, you can only generate short sentences and diversity of the sentences are somewhat limited but they think that this dataset and the generation process are helpful especially when developing and analyzing algorithms. Another contribution is that they extend the work in Weston et al. (2014) ([Memory Networks](http://arxiv.org/pdf/1410.3916v11.pdf)) in 3 ways. They use (1) "Adaptive Memories" thus they can do well in "Three Supporting Facts" subproblem. Original algorithm (Memory Network, MemNN) performs two hops of inference and it doesn't do well on tasks where algorithm needs to perform more than two hops of inference such as "Three Supporting Facts" or "Path Finding". Second extension is (2) N-Grams. This extension addresses the limitations of bag of words problem in the nature of some subtasks such as "Two Argument Relations". If a system use only bag-of-words approach, it cannot distinguish which one is in the north of which: `the office is north of the bedroom`. This is equivalent of `the bedroom is north of the office` in bag-of-word methodology, however, the semantic is completely different. The last extension is that (3) Nonlinearity in matching function. I think paper is worth a read.
 
+
+### <a name="trans-sent-alter"></a> 6. How Translation Alters Sentiment (2015) 
+
+**Warning**: This paper will not meet TL;DR criteria at all.
+
+
+[This paper](http://www.saifmohammad.com/WebDocs/arabicSA-JAIR.pdf) focuses on analyzing state-of-the-art sentiment analyzer's performance on translated texts. What they have? 
+
+
+- Manually annotated parallel corpora for a resource-rich language (English) and a resource-poor language (Arabic).
+- Manual sentiment annotation for these corpora.
+- A state-of-the-art English sentiment analyzer tool.
+- Arabic version of above tool (they implemented Arabic version with the same method)
+- Statistical Machine Translation (SMT) system that translates in both direction ($$English \Longleftrightarrow Arabic$$)
+
+Let me introduce you some notations:
+
+- $$ L_m^t $$: Manual translation of language $$L$$ to focus language
+- $$ L_a^t $$: Automatic translation of language $$L$$ to focus language
+- $$ (L_m^t)_m^s $$: Manual sentiment annotation of manual translation of $$L$$
+- $$ (L_m^t)_a^s $$: Automatic sentiment annotation of manual translation of language $$L$$
+
+#### Experiment A. 
+`Translate Arabic text into English (manually and automatically) and annotate
+the English text for sentiment (manually and automatically). Compare the
+sentiment labels assigned to the translated English text with manual sentiment annotations
+of the Arabic text. The more similar the sentiment annotations are, the less
+is the impact of translation.`
+
+**Data:** 
+
+1. Arabic social media dataset (BBN). (1200 sentences)
+1. Random tweets originating from Syria (2000 tweets)
+
+
+**Evaluation:**
+
+Match percentages:
+==================
+
+1. Human agreement benchmark for sentiment analysis: 73.82% (think of the upperbound)
+2. $$ A_m^s $$ vs $$ A_a^s $$: 65.31%
+3. $$ A_m^s $$ vs $$ (E_m^t)_m^s $$: 71.31%
+4. $$ A_m^s $$ vs $$ (E_m^t)_a^s $$: 67.73%
+5. $$ A_m^s $$ vs $$ (E_a^t)_m^s $$: 57.21%
+6. $$ A_m^s $$ vs $$ (E_a^t)_a^s $$: 62.08%
+7. $$ (E_m^t)_m^s $$ vs $$ (E_a^t)_m^s $$: 60.08%
+8. $$ (E_m^t)_m^s $$ vs $$ (E_m^t)_a^s $$: 63.11%
+9. $$ (E_a^t)_m^s $$ vs $$ (E_a^t)_a^s $$: 69.58%
+
+* Surprising result 1: If the text translated automatically, human sentiment annotators have difficulties to pick `positive`, `neutral`, or `negative` for the text (**#5**)
+* Interesting result 2: Machine understands other machine (**#6**). The sentiment analyzer outperforms human sentiment annotators when the text in question is _translated_ automatically (i.e., with a SMT system).
+* Surprising result 3: If the text in question is translated automatically, annotations of sentiment analyzer (a.k.a Ex Machina) and human judges overlaps relatively well (**#9**). This made authors to try translating all knowledge resources in resource-rich language (English) to resource poor language (Arabic) and observed the performance increase in sentiment analyzer tool fed by these translated resources.
+
+Moreover, they also dug into sentiment analyzer and human discrepancy.
