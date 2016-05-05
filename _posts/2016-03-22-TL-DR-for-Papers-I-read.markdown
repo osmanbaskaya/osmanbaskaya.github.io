@@ -65,7 +65,7 @@ Representing these triplets can be useful for many applications, for instance Wo
 - Manual (Crowd-sourcing) sentiment annotation for these corpora.
 - A state-of-the-art English sentiment analyzer tool.
 - Arabic version of above tool (they implemented Arabic version with the same method)
-- Statistical Machine Translation (SMT) system that translates in both direction ($$English \Longleftrightarrow Arabic$$)
+- A Statistical Machine Translation (SMT) system that translates in both direction ($$English \Longleftrightarrow Arabic$$)
 
 Let me introduce you some notations:
 
@@ -102,7 +102,7 @@ Match percentages:
 8. $$ (E_m^t)_m^s $$ vs $$ (E_m^t)_a^s $$: 63.11%
 9. $$ (E_a^t)_m^s $$ vs $$ (E_a^t)_a^s $$: 69.58%
 
-* Surprising result 1: If the text translated automatically, human sentiment annotators have difficulties to pick `positive`, `neutral`, or `negative` for the text (**#5**)
+* Surprising result 1: If the text translated automatically, human sentiment annotators have difficulties to pick either `positive` or `neutral`, or `negative` for the text (**#5**).
 * Interesting result 2: Machine understands other machine (**#6**). The sentiment analyzer outperforms human sentiment annotators when the text in question is _translated_ automatically (i.e., with a SMT system).
 * Surprising result 3: If the text in question is translated automatically, annotations of sentiment analyzer (a.k.a Ex Machina) and human judges overlaps relatively well (**#9**). This made authors to try translating all knowledge resources in resource-rich language (English) to resource poor language (Arabic) and observed the performance increase in sentiment analyzer tool fed by these translated resources.
 
