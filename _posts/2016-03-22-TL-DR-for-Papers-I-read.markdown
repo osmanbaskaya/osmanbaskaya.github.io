@@ -106,4 +106,17 @@ Match percentages:
 * Interesting result 2: Machine understands other machine (**#6**). The sentiment analyzer outperforms human sentiment annotators when the text in question is _translated_ automatically (i.e., with a SMT system).
 * Surprising result 3: If the text in question is translated automatically, annotations of sentiment analyzer (a.k.a Ex Machina) and human judges overlaps relatively well (**#9**). This made authors to try translating all knowledge resources in resource-rich language (English) to resource poor language (Arabic) and observed the performance increase in sentiment analyzer tool fed by these translated resources.
 
-Moreover, they also dug into discrepancy between the sentiment analyzer and human judges.
+Moreover, they also dug into discrepancy between the sentiment analyzer and human judges. In order to shed light on this, they used an annotator who was provided:
+
+- The original Arabic tweet,
+- Manually determined sentiment of the Arabic tweet (positive, negative, or neutral),
+- Automatic English translation of Arabic tweet,
+- manually determined sentiment of the translation.
+
+Note that, both sentiment decisions are _manual_. Only difference here is that we have two sentiment annotations of (1) original Arabic tweet and (2) of its English translation (_automatic_). Here, they aimed to understand the underlying difference between automatic translation and manual translation in sentiment annotation. 
+
+According to a judge who is fluent both English and Arabic, the main reason sentiment annotators had difficulties dealing with manual translation of an Arabic sentence is **cultural difference** (as pointed out in paper: `Translation is reasonable (sentiment-wise), but the same sentence can be viewed as having one sentiment in the Arabic speaking population and different sentiment in the English-speaking population due to cultural and life-style differences.`). Cultural difference seemed to create a problem for 63% cases. Bad manual translation makes the sentiment analysis problematic for 35% cases. On the other hand, for sentiment analysis over automatic translation, problem is mostly **bad translation** (81.2%); more than half of this case bad translation is arised from `sentiment words disappear`. So, SMT systems cannot translate sentiment-bearing words very well. [Chen and Zhu (2014)](http://www.aclweb.org/anthology/E14-1064) focussed on this problem and provided hand-crafted features and improved BLEU 1.1.
+
+#### Experiment B.
+
+Sentiment analysis system provided good results (see #9 row in above) on automatic translation of a text. This motivated the authors translate all related resources (sense lexicons etc.) to resource-poor language and were able to improve the performance of a sentiment analysis system which used translated resources. Similar idea is demonstrated by [Lu et al. (2011)](https://aclweb.org/anthology/P/P11/P11-1033.pdf). They suggested a _joint_ bilingual sentiment classification system.
