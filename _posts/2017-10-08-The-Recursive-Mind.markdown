@@ -40,7 +40,7 @@ Details for the book: [The Recursive Mind - The Origins of Human Language, Thoug
     * From a Darwinian perspective this view is deeply implausible. Language is complex. Complex biological structures can be expressed by the power of natural selection. 
     * Language was/is also as a kind of passport. 
         * Nicholas Evans suggests that the diversity of language was not driven by geographic isolation, since they coexist in areas where there are no geographic barriers, and several different languages are often spoken within the same household. Language variation also seems to be driven by more than random drift. Evans suggests that language serves as a kind of passport, marking the right to belong to a particular local society. As groups split off, they may make deliberate moves to differentiate their languages. For example, in the Uisia dialect of the Buin language on Bougainville Island the gender agreements have all been reversed relative to those in the other dialects. All the masculine words have become feminine and all the feminine words masculine. This seems clearly a deliberate move to differentiate a particular subcommunity from the rest.
-    * **Question** for Chomsky’s view is the degree of diversity recorded by researcher could have arisen in so short a time? That’s why author thinks that grammar itself evolved gradually rather than as a singular event withing the past 100K years. 
+    * **Question** for Chomsky’s view: Is the degree of diversity recorded by researcher could have arisen in so short a time? That’s why author thinks that grammar itself evolved gradually rather than as a singular event withing the past 100K years. 
 *  Grammaticalization
     * If grammar does not depend on some inborn, universal set of principles, what does it depend on? It seems it's more a gradual process, driven by practical concerns rather than biological predisposition.
     * One of the processes involved in grammaticalization has to do with the changing roles of words, leading to more efficient and economical expression. Functional words emerged from content words.
@@ -105,22 +105,24 @@ Details for the book: [The Recursive Mind - The Origins of Human Language, Thoug
         * Episodic memory captures the approximate time of the event that provides an general understanding of time itself. 
         * Allows us to do mental time travel; to remember past events as well as to imagine the future events. This enables us to fine-tune our lives. “episodic future thinking"
         * The importance of episodic memory is nothing about remembering the past. Therefore, episodic memory does not show an amazing performance to remember things (We don’t remember the most of the details about event or we sometimes mixed events that didn’t happen. Famous experiment related with this: When you tell a person a large set of words related with each other (i.e, kitchen utensils) and ask whether he/she did hear the word not in the list. You'll get poor performance), but rather its role in constructing future scenarios and fine-tune our life. Ulric Neisser says: “Remembering is not like playing back a tape or looking at a picture; it is more like telling a story.”.
-### Mental Time travel is unique to humans?
-    * Author claims that mental time travel is unique to human even there are experiments showed that animals have mechanism resembles to this. However, author argues that these experiments didn’t show animals go back to past and remember these. This might be because birds (very successful animals in this regard) have useby-date (when versus how-long ago) not necessarily comes from mental time travel. Also designing an experiment to test an animal does a mental time travel is fundamentally hard. Bird can’t say that ‘hey I vividly remember the moment I hided a peanut here yesterday’.
-    * _www_ memory: storage of what where and when.
-    * Note that birds are better than great-apes in this regard. Also they are better tool makers.
-    * **Bischof-Köhler hypothesis:** It states that only humans can flexibly anticipate their own future mental states of need and act in the present to satisfy them. 
+
+### Is Mental Time travel unique to humans?
+* Author claims that mental time travel is unique to human even there are experiments showed that animals have mechanism resembles to this. However, author argues that these experiments didn’t show animals go back to past and remember these. This might be because birds (very successful animals in this regard) have useby-date (when versus how-long ago) not necessarily comes from mental time travel. Also designing an experiment to test an animal does a mental time travel is fundamentally hard. Bird can’t say that ‘hey I vividly remember the moment I hided a peanut here yesterday’.
+* _www_ memory: storage of **w**hat **w**here and **w**hen.
+* Note that birds are better than great-apes in this regard. Also they are better tool makers.
+* **Bischof-Köhler hypothesis:** It states that only humans can flexibly anticipate their own future mental states of need and act in the present to satisfy them. 
 * In some point at the end of the Chapter 6, author says this: "It is perhaps through iteration rather than true recursion that we understand the nature of time. Just as tomorrows extend indefinitely into the future, so yesterdays extend indefinitely back into the past.”. How come we reach this conclusion, I don’t really know.
+
 ### Grammatical language
-    * Author thinks that the grammatical language evolves primarily to enable human to share episodes. This would also provide future planning and cultural expectations. Language helps us to share knowledge as well but author’s main claim is to enable us to communicate about events that do not take place in here and now (unlike animals which are always living in “now and here”).
-    * The first requirement for grammar is that symbols for not-physically-present things.
-    * Symbols derives from practical concerns rather than linguistic necessity.
-        * Zipf’s law applies this phenomenon actually: Length of the word is inversely proportional to its rank in frequency.
-    * We’re “the symbolic species”. — Terrence Deacon
-    * Language reflects thought, rather than vice versa. Also I think thoughts are highly dependent to environment. It’s possible to say environment —> thoughts —> language.
-    * Language is generative. We can construct and understand sentences that we never heard. 
-    * We know through Noam Chomsky that language cannot be explained in terms of learned sequences. Instead, it depends on rules which combine words in precise ways to enable us to extract meaning. 
-    * Mental time travel is also a recursive function. 
+* Author thinks that the grammatical language evolves primarily to enable human to share episodes. This would also provide future planning and cultural expectations. Language helps us to share knowledge as well but author’s main claim is to enable us to communicate about events that do not take place in here and now (unlike animals which are always living in “now and here”).
+* The first requirement for grammar is that symbols for not-physically-present things.
+* Symbols derives from practical concerns rather than linguistic necessity.
+    * Zipf’s law applies this phenomenon actually: Length of the word is inversely proportional to its rank in frequency.
+* We’re “the symbolic species”. — Terrence Deacon
+* Language reflects thought, rather than vice versa. Also I think thoughts are highly dependent to environment. It’s possible to say environment —> thoughts —> language.
+* Language is generative. We can construct and understand sentences that we never heard. 
+* We know through Noam Chomsky that language cannot be explained in terms of learned sequences. Instead, it depends on rules which combine words in precise ways to enable us to extract meaning. 
+* Mental time travel is also a recursive function. 
 
 ## Part III - Theory of Mind
 
