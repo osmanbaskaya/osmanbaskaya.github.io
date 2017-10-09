@@ -6,9 +6,12 @@ excerpt: "I am interested in language and its evolution. Recently, I read a book
 date: 2017-10-08 22:14
 ---
 
-I am interested in language and its evolution. Recently, I read a book related with a story of our language. I don't know you but I am not so good at recalling things from books. So, I start taking notes while reading. In this post, I'd like to share these notes about "The Recursive Mind: The Origins of Human Language, Thought, and Civilization". Before sharing the notes, there are two caveats I'd like to point out: (1) These notes may not be very useful for others. My intention was that notes would have merely been for my personal usage. That's why some notes might give a feeling that they are dangling in the air. That is, they might not be self-explanatory. I try my best to reduce happening of those situations but there is a trade-off between creating something for personal use (less context, less time) versus for public use (more context, more time). (2) These notes or "summary" does not mean that you do not read the book anymore. It's actually quite opposite. Alright. We're ready. Let's get started.
+I am interested in language and its evolution. Recently, I read a book related with a story of our language. I don't know you but I am not so good at recalling things from books. So, I start taking notes while reading. In this post, I'd like to share these notes about "The Recursive Mind: The Origins of Human Language, Thought, and Civilization". Before sharing the notes, there are two caveats I'd like to point out: (1) These notes may not be very useful for others. My intention was that notes would have merely been for my personal usage. That's why some notes might give a feeling that they are dangling in the air. That is, they might not be self-explanatory. I try my best to reduce happening of those situations but there is a trade-off between creating something for personal use (less context, less time) versus for public use (more context, more time). (2) Reading these notes doesn't mean that you don't read the book anymore. It's actually quite opposite. It's an appetizer (yes, a very long one) for a main dish.
 
 Details for the book: [The Recursive Mind - The Origins of Human Language, Thought, and Civilization by Michael C. Corballis](https://www.goodreads.com/book/show/22087757-the-recursive-mind)
+
+Let's get started.
+
 
 ## Part I: Language
 
