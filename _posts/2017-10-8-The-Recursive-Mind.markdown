@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Book Summary: "The Recursive Mind: The Origins of Human Language, Thought, and Civilization"
 excerpt: Here is my notes from the book named "The Recursive Mind". 
+date: 2017-10-8 22:14
 ---
 
 I am interested in language and its evolution. Recently, I read a book related with the story of our language. I don't know you but I am not so good to recall things from the books. So, I start taking notes while reading. In this post, I'd like to share my notes about "The Recursive Mind: The Origins of Human Language, Thought, and Civilization". Before sharing the notes, there are two caveats I'd like to point out: (1) These notes may not be very useful for others. Intention was for personal. Some notes might give a feeling that they are dangling in the air, in other words, they might not be self-explanatory. I try my best to avoid those situations but there is a tradeoff between personal use (less context, less time) versus public use (more context, more time). (2) This notes or "summary" does not mean that you do not read the book anymore. It's actually quite opposite. So, let's get started.
