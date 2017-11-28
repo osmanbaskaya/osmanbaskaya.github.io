@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Book Summary | The Recursive Mind: The Origins of Human Language, Thought, and Civilization"
+title: "The Recursive Mind: The Origins of Human Language, Thought, and Civilization"
 excerpt: "I am interested in language and its evolution. Recently, I read a book related with a story of our language. I don't know you but I am not so good at recalling things from books. Here is my notes from the book."
 date: 2017-10-08 22:14
 ---
