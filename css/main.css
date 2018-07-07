@@ -423,4 +423,4 @@ a:visited { color: #205caa; }
     width: auto;
     margin: 0 0 15px; }
 
-}
+img + em { }
