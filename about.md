@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am **Osman Başkaya**, joining [Twilio](https://www.twilio.com/) as a Senior Data Scientist. Previously, I was a research Engineer at [Totient](https://sbgdinc.com/) and [Seven Bridges Genomics](https://www.sevenbridges.com/) in Boston and Huawei Research in Istanbul.
+I am **Osman Başkaya**, works at [Twilio](https://www.twilio.com/) as a Senior Data Scientist. Previously, I was a research Engineer at [Totient](https://sbgdinc.com/) and [Seven Bridges Genomics](https://www.sevenbridges.com/) in Boston and Huawei Research in Istanbul.
 
 My main research interests:
 
