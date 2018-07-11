@@ -4,14 +4,23 @@ title: About
 permalink: /about/
 ---
 
-I am **Osman Başkaya**, working at [Seven Bridges Genomics](https://www.sbgenomics.com/) as a Research Engineer. 
+I am **Osman Başkaya**, joining [Twilio](https://www.twilio.com/) as a Senior Data Scientist. Previously, I was a research Engineer at [Totient](https://sbgdinc.com/) and [Seven Bridges Genomics](https://www.sevenbridges.com/) in Boston and Huawei Research in Istanbul.
 
-My main research interests are as follows:
+My main research interests:
 
-- Machine Learning 
-- Deep Learning
 - Natural Language Processing
+- Deep Learning
+- Machine Learning 
 - Recommendation Systems
+
+Some NLP problems that I worked on intensively:
+
+- Word Sense Disambiguation
+- Word Sense Induction
+- Sentiment Analysis
+- Named Entity Recognition
+- Textual Similarity 
+- Document Classification
 
 ---
 

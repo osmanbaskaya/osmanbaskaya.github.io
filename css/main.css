@@ -424,3 +424,10 @@ a:visited { color: #205caa; }
     margin: 0 0 15px; }
 
 img + em { }
+
+.center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin: 0 auto;
+}
